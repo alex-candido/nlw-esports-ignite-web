@@ -9,7 +9,7 @@ import { api } from '../../services/api';
 
 import '../../styles/main.css';
 
-interface GameProps {
+export interface GameProps {
   id: string;
   title: string;
   bannerUrl: string;
@@ -37,6 +37,7 @@ const Home = () => {
         {games.map((game, id) => (
           <GameBanner
             key={id} 
+            gameId={game.id}
             bannerUrl={game.bannerUrl} 
             title={game.title} 
             adsCount={game._count.ads} 
