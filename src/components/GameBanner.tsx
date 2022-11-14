@@ -7,19 +7,25 @@ export interface GameBannerProps {
   adsCount: number;
 }
 
-const GameBanner = (props: GameBannerProps) => {
+
+const GameBanner = ({ gameId, bannerUrl, title, adsCount}: GameBannerProps) => {
+  function handleChange(){
+
+  }
 
   return (
     <Link
     className="relative rounded-lg overflow-hidden"
-    to={`/game/${props.gameId}`}
+    to={`/game/${gameId}`}
+    onClick={() => handleChange()}
     >
-      <img src={props.bannerUrl} alt={props.title} />
+      <img src={bannerUrl} alt={title} />
 
       <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
-        <strong className="font-bold text-white block">{props.title}</strong>
-        <span className="text-zinc-300 text-sm block">{props.adsCount} anúncio(s)</span>
+        <strong className="font-bold text-white block">{title}</strong>
+        <span className="text-zinc-300 text-sm block">{adsCount} anúncio(s)</span>
       </div>
+
     </Link>
   )
 }
