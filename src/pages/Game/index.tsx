@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import AdsBanner from "../../components/AdsCard";
 import Heading from "../../components/Heading";
+import NotDuo from "../../components/NotDuo";
 import { api } from "../../services/api";
 import { GameProps } from "../Home";
 
@@ -63,6 +64,7 @@ const Game = () => {
           />
         ))}
       </div>
+      {ads.length <= 0 && <NotDuo />}
       
     </div>
   )
