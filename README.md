@@ -1,6 +1,6 @@
 <img alt="nlw esports" src="/src/assets/banner-nlw-esports.png" />
 
-# NLW eSports 
+# NLW eSports - Web
 
 Find your Duo é um projeto desenvolvido na NLW, é uma plataforma gamer de criação de anúncios. Tendo como funcionalidades, listagem de games com contagem de anúncios, criação de novo anúncio, listagem de anúncios por game, Buscar discord por ID do anúncio. Conectando a aplicação na [API backend](https://github.com/alex-candido/nlw-esports-ignite-server), é possível emparelhar requisições, listar todos os items criando uma página Home com posts/Games, além disso criar anúncios, e por meio de Links acessar uma página com os dados dos anúncios completos.
 
